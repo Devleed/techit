@@ -1,0 +1,303 @@
+.nav__secondary-horizontal {
+  height: 20vh;
+  background-color: #fff;
+
+  display: flex;
+  padding: 3rem 10rem 4rem 10rem;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+
+  @include respond-max($largest-1000px) {
+    padding: 3rem;
+  }
+
+  @include respond-max($large-750px) {
+    padding: 1.5rem;
+  }
+
+  @include respond-max($medium-650px) {
+    height: 18vh;
+    padding: 0;
+    background-color: rgb(2, 126, 115);
+  }
+
+  @include respond-max($small-550px) {
+    height: 16vh;
+  }
+}
+
+// * NAV OPENER
+.nav__opener {
+  #nav__opener-btn {
+    display: none;
+  }
+
+  #nav__opener-btn:checked ~ .nav__content {
+    visibility: visible;
+    opacity: 1;
+    transition: all 0.5s;
+  }
+  #nav__opener-btn:checked ~ .nav__content .nav__items {
+    transform: translateX(0);
+    transition: all 0.7s 0.4s;
+  }
+
+  .nav__content {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba($color: $nav-primary-color, $alpha: 0.5);
+    width: 100%;
+    height: 100vh;
+    z-index: 9500;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.5s 0.4s;
+
+    .nav__items {
+      padding: 4rem;
+      background-color: #fff;
+      height: 100%;
+      width: 25%;
+      transform: translateX(-100%);
+      transition: all 0.7s 0s;
+
+      @include respond-max($largest-1000px) {
+        width: 35%;
+      }
+      @include respond-max($large-750px) {
+        width: 45%;
+      }
+      @include respond-max($small-550px) {
+        width: 55%;
+      }
+      @include respond-max($smaller-450px) {
+        width: 70%;
+      }
+    }
+
+    .nav__item {
+      margin: 3rem 1rem;
+    }
+    .nav__item-title {
+      text-transform: uppercase;
+    }
+  }
+
+  &-btn {
+    height: 4rem;
+    width: 4rem;
+    background-color: $nav-primary-color;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+
+    @include respond-max($medium-650px) {
+      background: transparent;
+    }
+
+    &:hover {
+      background-color: darken($nav-primary-color, 30);
+      @include respond-max($medium-650px) {
+        background: transparent;
+      }
+    }
+  }
+
+  &-btn span {
+    width: 50%;
+    height: 2px;
+    display: inline-block;
+    background-color: #fff;
+    position: relative;
+
+    &::before,
+    &::after {
+      content: '';
+      display: inline-block;
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      background-color: inherit;
+      left: 0;
+    }
+
+    &::before {
+      top: -5px;
+    }
+    &::after {
+      top: 5px;
+    }
+  }
+}
+
+// * NAV SEARCH
+.search {
+  width: 15%;
+  margin-left: 1rem;
+  display: flex;
+  align-items: center;
+
+  .icon {
+    width: 2rem;
+    height: 2rem;
+    padding: 11px;
+    border: 1px solid #e2e2e2;
+    border-left: none;
+    box-sizing: content-box;
+    border-radius: 0 3rem 3rem 0;
+
+    @include respond-max($medium-650px) {
+      background-color: #fff;
+      border-radius: initial;
+      padding: 3.2px;
+      border: none;
+    }
+  }
+  &__input:focus ~ .icon {
+    border-color: $nav-primary-color;
+  }
+  &__input {
+    font-family: inherit;
+    width: 50%;
+    border: 1px solid #e2e2e2;
+    padding: 1rem;
+    border-right: none;
+    border-radius: 3rem 0 0 3rem;
+    transition: all 0.3s;
+
+    @include respond-max($medium-650px) {
+      width: 100%;
+      padding: 4px 1rem;
+      border-radius: initial;
+      font-size: 1.2rem;
+      border: none;
+    }
+
+    &:focus {
+      width: 100%;
+      border-color: $nav-primary-color;
+    }
+  }
+}
+
+// * INTRO
+.intro {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  @include respond-max($medium-650px) {
+    order: 1;
+    background-color: #fff;
+    padding: 2rem 0;
+  }
+
+  .main__logo {
+    font-size: 7rem;
+    font-family: $logo-font-stack;
+    color: darken($nav-primary-color, 50);
+    line-height: 5rem;
+
+    @include respond-max($medium-650px) {
+      font-size: 5rem;
+    }
+  }
+  .slogan {
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    font-family: $primary-font-stack;
+    font-weight: 900;
+    color: $nav-primary-color;
+
+    @include respond-max($medium-650px) {
+      font-size: 1rem;
+    }
+  }
+}
+
+// * NAV ACTIONS
+.nav__actions {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  width: 20%;
+
+  @include respond-max($medium-650px) {
+    width: 70%;
+  }
+
+  .acc__action,
+  .cart__action {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.2s;
+    cursor: pointer;
+
+    &:hover {
+      color: $nav-primary-color;
+    }
+
+    .icon {
+      width: 3.2rem;
+      height: 3.2rem;
+      margin-bottom: 1rem;
+
+      @include respond-max($medium-650px) {
+        margin-bottom: 0;
+        fill: #fff;
+      }
+    }
+
+    span {
+      @include respond-max($large-750px) {
+        display: none;
+      }
+      text-transform: capitalize;
+      font-size: 1.2rem;
+      display: inline-block;
+    }
+  }
+  .acc__action {
+    margin-right: 2rem;
+  }
+}
+
+// * NAV PRIMARY
+.nav__primary {
+  position: sticky;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 5rem;
+  background-color: lighten($nav-primary-color, 17);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9000;
+
+  @include respond-max($small-550px) {
+    display: none;
+  }
+
+  &--items {
+    display: flex;
+    align-items: center;
+  }
+  &--item {
+    &:not(:last-child) {
+      margin-right: 4rem;
+    }
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    font-family: $primary-font-stack;
+    cursor: pointer;
+  }
+}

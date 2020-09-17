@@ -1,0 +1,26 @@
+.trending-section {
+  padding: 12rem 6rem;
+
+  @include respond-max($largest-1000px) {
+    padding: 6rem 4rem;
+  }
+}
+
+.trending__images {
+  display: flex;
+  width: 100%;
+
+  margin-top: 5rem;
+
+  @include respond-max($medium-650px) {
+    flex-direction: column;
+  }
+
+  img {
+    width: 50%;
+
+    @include respond-max($medium-650px) {
+      width: 100%;
+    }
+  }
+}
