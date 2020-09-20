@@ -13,12 +13,8 @@ html {
   font-size: 62.5%;
   box-sizing: border-box;
 
-  @include respond-max($medium-650px) {
-    font-size: 55%;
-  }
-
-  @include respond-max($small-550px) {
-    font-size: 48%;
+  @include respond-max($large-650px) {
+    font-size: 50%;
   }
 }
 
@@ -31,5 +27,28 @@ button {
   &,
   &:focus {
     outline: none;
+  }
+}
+
+.flickity-viewport {
+  width: 100% !important;
+  height: 100% !important;
+}
+// .flickity-slider {
+//   transform: translateX(0%);
+// }
+.flickity-button {
+  border: 1px solid #000;
+  color: black;
+  transition: all 0.3s;
+  background-color: white;
+
+  &:hover {
+    border: 1px solid blue;
+    background-color: blue !important;
+  }
+
+  &:hover svg {
+    fill: white;
   }
 }

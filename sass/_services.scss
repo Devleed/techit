@@ -1,0 +1,47 @@
+.services-section {
+  width: 86.5%;
+  margin: 0 7%;
+  border-top: 1px solid lightgray;
+  border-bottom: 1px solid lightgray;
+  padding: 5rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+
+  @include respond-max($largest-950px) {
+    margin: 0;
+    width: 100%;
+  }
+}
+
+.service {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: $primary-black;
+  flex-basis: 17%;
+  text-align: center;
+  height: 14rem;
+  justify-content: space-between;
+
+  @include respond-max($large-650px) {
+    flex-basis: 30%;
+  }
+
+  .icon {
+    width: 5.5rem;
+    height: 5.5rem;
+    fill: currentColor;
+  }
+  &__title {
+    text-transform: uppercase;
+    font-size: 1.7rem;
+    font-weight: 500;
+  }
+
+  &__desc {
+    font-size: 1.2rem;
+    text-transform: capitalize;
+    color: lighten($primary-black, 45);
+  }
+}

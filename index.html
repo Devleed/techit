@@ -3,715 +3,748 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Elic | It get's better here</title>
+    <title>Techit | Buy the better</title>
     <link rel="stylesheet" href="./css/main.css" />
-    <link
+    <!-- <link
       href="https://fonts.googleapis.com/css2?family=Rouge+Script&display=swap"
       rel="stylesheet"
     />
     <link
       href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600&display=swap"
       rel="stylesheet"
-    />
+    /> -->
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/flickity@2/dist/flickity.min.css"
+    />
   </head>
+
   <body>
     <div class="wrapper">
-      <div class="nav__secondary-horizontal">
-        <div class="nav__opener">
-          <input type="checkbox" name="nav__opener" id="nav__opener-btn" />
-          <label for="nav__opener-btn" class="nav__opener-btn">
-            <span></span>
-          </label>
-
-          <div class="nav__content">
-            <div class="nav__items">
-              <div class="nav__item">
-                <h2 class="nav__item-title">shop man</h2>
-                <div class="nav__item-btn"></div>
-              </div>
-              <div class="nav__item">
-                <h2 class="nav__item-title">shop woman</h2>
-                <div class="nav__item-btn"></div>
-              </div>
-              <div class="nav__item">
-                <h2 class="nav__item-title">shop children</h2>
-                <div class="nav__item-btn"></div>
-              </div>
-              <div class="nav__item">
-                <h2 class="nav__item-title">shop by brand</h2>
-                <div class="nav__item-btn"></div>
+      <div class="navbar">
+        <input type="checkbox" name="navbar__opener" id="navbar__opener-btn" />
+        <label for="navbar__opener-btn" class="navbar-btn">
+          <span></span>
+        </label>
+        <h2 class="main__logo">Techit</h2>
+        <ul class="navbar__items">
+          <li class="navbar__item">
+            <span class="item__title">Demo</span>
+            <div class="item__results">
+              <ul class="item__list">
+                <li class="item__list--item title">title</li>
+                <li class="item__list--item">lorem ipsum</li>
+                <li class="item__list--item">lorem ipsum</li>
+                <li class="item__list--item">lorem ipsum</li>
+                <li class="item__list--item">lorem ipsum</li>
+                <li class="item__list--item">lorem ipsum</li>
+                <li class="item__list--item">lorem ipsum</li>
+                <li class="item__list--item">lorem ipsum</li>
+              </ul>
+              <ul class="item__list">
+                <li class="item__list--item title">title</li>
+                <li class="item__list--item">lorem ipsum</li>
+                <li class="item__list--item">lorem ipsum</li>
+                <li class="item__list--item">lorem ipsum</li>
+              </ul>
+              <ul class="item__list">
+                <li class="item__list--item title">title</li>
+                <li class="item__list--item">lorem ipsum</li>
+                <li class="item__list--item">lorem ipsum</li>
+              </ul>
+            </div>
+          </li>
+          <li class="navbar__item">
+            <span class="item__title">Shop</span>
+            <div class="item__results">
+              <ul class="item__list">
+                <li class="item__list--item title">title</li>
+                <li class="item__list--item">lorem ipsum</li>
+                <li class="item__list--item">lorem ipsum</li>
+                <li class="item__list--item">lorem ipsum</li>
+                <li class="item__list--item">lorem ipsum</li>
+                <li class="item__list--item">lorem ipsum</li>
+                <li class="item__list--item">lorem ipsum</li>
+                <li class="item__list--item">lorem ipsum</li>
+              </ul>
+              <ul class="item__list">
+                <li class="item__list--item title">title</li>
+                <li class="item__list--item">lorem ipsum</li>
+                <li class="item__list--item">lorem ipsum</li>
+                <li class="item__list--item">lorem ipsum</li>
+              </ul>
+              <img
+                src="./images/phones-small.webp"
+                alt="phones image small"
+                class="scale-img"
+              />
+            </div>
+          </li>
+          <li class="navbar__item">
+            <span class="item__title">Sale</span>
+            <div class="item__results item__results-large">
+              <ul class="item__list">
+                <li class="item__list--item title">Filter Options</li>
+                <li class="item__list--item title">Load More Buttons</li>
+                <li class="item__list--item title">Infinit Scrolling</li>
+                <li class="item__list--item title">Catalog Mode</li>
+                <li class="item__list--item title">Cookies Law Info</li>
+                <li class="item__list--item title">Age verification</li>
+                <li class="item__list--item title">Mega Menu</li>
+              </ul>
+              <div class="product__cards">
+                <div class="product__card">
+                  <figure class="product__figure">
+                    <img
+                      src="./images/samsung note 20 front.jpg"
+                      alt="samsung note 20 front"
+                    />
+                    <img
+                      src="./images/samsung note 20 back.jpg"
+                      alt="samsung note 20 back"
+                    />
+                    <div class="product__actions">
+                      <svg class="icon">
+                        <use xlink:href="./images/icon/sprite.svg#heart"></use>
+                      </svg>
+                    </div>
+                    <div class="discount-flag">-20%</div>
+                    <div class="btn__stack">
+                      <button class="primary__button">
+                        <span class="btn__title">quick view</span>
+                        <svg class="icon">
+                          <use xlink:href="./images/icon/sprite.svg#eye"></use>
+                        </svg>
+                      </button>
+                      <button class="primary__button">
+                        <span class="btn__title">buy now</span>
+                        <svg class="icon">
+                          <use
+                            xlink:href="./images/icon/sprite.svg#shopping-cart"
+                          ></use>
+                        </svg>
+                      </button>
+                    </div>
+                  </figure>
+                  <div class="product__info">
+                    <h2 class="product__title">Samsung note 20 ultra</h2>
+                    <div class="product__price">
+                      <span class="original__price">$2,500.00</span>
+                      <span class="discounted__price">$2,000.00</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="product__card">
+                  <figure class="product__figure">
+                    <img
+                      src="./images/huawei p30 front.jpg"
+                      alt="huawei p30 front"
+                    />
+                    <img
+                      src="./images/huawei p30 back.jpg"
+                      alt="huawei p30 back"
+                    />
+                    <div class="product__actions">
+                      <svg class="icon">
+                        <use xlink:href="./images/icon/sprite.svg#heart"></use>
+                      </svg>
+                    </div>
+                    <div class="discount-flag">-25%</div>
+                    <div class="btn__stack">
+                      <button class="primary__button">
+                        <span class="btn__title">quick view</span>
+                        <svg class="icon">
+                          <use xlink:href="./images/icon/sprite.svg#eye"></use>
+                        </svg>
+                      </button>
+                      <button class="primary__button">
+                        <span class="btn__title">buy now</span>
+                        <svg class="icon">
+                          <use
+                            xlink:href="./images/icon/sprite.svg#shopping-cart"
+                          ></use>
+                        </svg>
+                      </button>
+                    </div>
+                  </figure>
+                  <div class="product__info">
+                    <h2 class="product__title">Huawei p30</h2>
+                    <div class="product__price">
+                      <span class="original__price">$700.00</span>
+                      <span class="discounted__price">$640.00</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="product__card">
+                  <figure class="product__figure">
+                    <img
+                      src="./images/huawei nova front.jpg"
+                      alt="huawei nova front"
+                    />
+                    <img
+                      src="./images/huawei nova back.jpg"
+                      alt="huawei nova back"
+                    />
+                    <div class="product__actions">
+                      <svg class="icon">
+                        <use xlink:href="./images/icon/sprite.svg#heart"></use>
+                      </svg>
+                    </div>
+                    <div class="discount-flag">-10%</div>
+                    <div class="btn__stack">
+                      <button class="primary__button">
+                        <span class="btn__title">quick view</span>
+                        <svg class="icon">
+                          <use xlink:href="./images/icon/sprite.svg#eye"></use>
+                        </svg>
+                      </button>
+                      <button class="primary__button">
+                        <span class="btn__title">buy now</span>
+                        <svg class="icon">
+                          <use
+                            xlink:href="./images/icon/sprite.svg#shopping-cart"
+                          ></use>
+                        </svg>
+                      </button>
+                    </div>
+                  </figure>
+                  <div class="product__info">
+                    <h2 class="product__title">Huawei nova mint blue</h2>
+                    <div class="product__price">
+                      <span class="original__price">$649.99</span>
+                      <span class="discounted__price">$600.00</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="product__card">
+                  <figure class="product__figure">
+                    <img
+                      src="./images/huawei nova front.jpg"
+                      alt="huawei nova front"
+                    />
+                    <img
+                      src="./images/huawei nova back.jpg"
+                      alt="huawei nova back"
+                    />
+                    <div class="product__actions">
+                      <svg class="icon">
+                        <use xlink:href="./images/icon/sprite.svg#heart"></use>
+                      </svg>
+                    </div>
+                    <div class="discount-flag">-10%</div>
+                    <div class="btn__stack">
+                      <button class="primary__button">
+                        <span class="btn__title">quick view</span>
+                        <svg class="icon">
+                          <use xlink:href="./images/icon/sprite.svg#eye"></use>
+                        </svg>
+                      </button>
+                      <button class="primary__button">
+                        <span class="btn__title">buy now</span>
+                        <svg class="icon">
+                          <use
+                            xlink:href="./images/icon/sprite.svg#shopping-cart"
+                          ></use>
+                        </svg>
+                      </button>
+                    </div>
+                  </figure>
+                  <div class="product__info">
+                    <h2 class="product__title">Huawei nova mint blue</h2>
+                    <div class="product__price">
+                      <span class="original__price">$649.99</span>
+                      <span class="discounted__price">$600.00</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="product__card">
+                  <figure class="product__figure">
+                    <img
+                      src="./images/huawei nova front.jpg"
+                      alt="huawei nova front"
+                    />
+                    <img
+                      src="./images/huawei nova back.jpg"
+                      alt="huawei nova back"
+                    />
+                    <div class="product__actions">
+                      <svg class="icon">
+                        <use xlink:href="./images/icon/sprite.svg#heart"></use>
+                      </svg>
+                    </div>
+                    <div class="discount-flag">-10%</div>
+                    <div class="btn__stack">
+                      <button class="primary__button">
+                        <span class="btn__title">quick view</span>
+                        <svg class="icon">
+                          <use xlink:href="./images/icon/sprite.svg#eye"></use>
+                        </svg>
+                      </button>
+                      <button class="primary__button">
+                        <span class="btn__title">buy now</span>
+                        <svg class="icon">
+                          <use
+                            xlink:href="./images/icon/sprite.svg#shopping-cart"
+                          ></use>
+                        </svg>
+                      </button>
+                    </div>
+                  </figure>
+                  <div class="product__info">
+                    <h2 class="product__title">Huawei nova mint blue</h2>
+                    <div class="product__price">
+                      <span class="original__price">$649.99</span>
+                      <span class="discounted__price">$600.00</span>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
-          </div>
-        </div>
-
-        <div class="search">
-          <input type="text" class="search__input" placeholder="search" />
-
+          </li>
+        </ul>
+        <ul class="navbar__actions">
           <svg class="icon">
             <use xlink:href="./images/icon/sprite.svg#search"></use>
           </svg>
-        </div>
-
-        <div class="intro">
-          <h2 class="main__logo">Elic</h2>
-          <p class="slogan">in business since 1988</p>
-        </div>
-
-        <div class="nav__actions">
-          <div class="acc__action">
-            <!-- <img src="./images/icon/account.svg" alt="account icon" /> -->
-            <svg class="icon">
-              <use xlink:href="./images/icon/sprite.svg#account"></use>
-            </svg>
-            <span>my account</span>
-          </div>
-          <div class="cart__action">
-            <svg class="icon">
-              <use xlink:href="./images/icon/sprite.svg#cart"></use>
-            </svg>
-            <span>my cart</span>
-          </div>
-        </div>
-      </div>
-
-      <div class="nav__primary">
-        <div class="nav__primary--items">
-          <div class="nav__primary--item">
-            <h2 class="nav__primary-title">home</h2>
-            <div class="nav__content">
-              <div class="nav__item-results"></div>
-            </div>
-          </div>
-          <div class="nav__primary--item">
-            <h2 class="nav__primary-title">page</h2>
-            <div class="nav__content">
-              <div class="nav__item-results"></div>
-            </div>
-          </div>
-          <div class="nav__primary--item">
-            <h2 class="nav__primary-title">woman</h2>
-            <div class="nav__content">
-              <div class="nav__item-results"></div>
-            </div>
-          </div>
-          <div class="nav__primary--item">
-            <h2 class="nav__primary-title">man</h2>
-            <div class="nav__content">
-              <div class="nav__item-results"></div>
-            </div>
-          </div>
-          <div class="nav__primary--item">
-            <h2 class="nav__primary-title">blog</h2>
-            <div class="nav__content">
-              <div class="nav__item-results"></div>
-            </div>
-          </div>
-          <div class="nav__primary--item">
-            <h2 class="nav__primary-title">contact</h2>
-            <div class="nav__content">
-              <div class="nav__item-results"></div>
-            </div>
-          </div>
-        </div>
+          <svg class="icon">
+            <use xlink:href="./images/icon/sprite.svg#account"></use>
+          </svg>
+          <svg class="icon">
+            <use xlink:href="./images/icon/sprite.svg#heart"></use>
+          </svg>
+          <svg class="icon">
+            <use xlink:href="./images/icon/sprite.svg#shopping-cart"></use>
+          </svg>
+        </ul>
       </div>
 
       <div class="header">
-        <div class="header__images">
-          <img src="./images/pic1.jpg" class="visible" alt="picture 1" />
-          <img src="./images/pic2.jpg" alt="picture 2" />
-          <img src="./images/pic3.jpg" alt="picture 3" />
+        <div class="intro">
+          <span class="year">summer 2020</span>
+          <h2 class="heading">meet galaxy s20, s20+</h2>
+          <span class="para"
+            >this is the phone that will change photography</span
+          >
         </div>
+        <button class="primary__button">
+          <span class="btn__title">explore now</span>
+          <svg class="icon">
+            <use xlink:href="./images/icon/sprite.svg#eye"></use>
+          </svg>
+        </button>
       </div>
 
-      <section class="main">
-        <section class="arrival-section">
-          <div class="arrival__info">
-            <h2 class="primary-heading">new arrivals</h2>
-            <p class="primary-slogan">
-              Hand-picked arrivals from the best designer
+      <div class="main">
+        <section class="services-section">
+          <div class="service">
+            <svg class="icon">
+              <use xlink:href="./images/icon/sprite.svg#delivery-truck"></use>
+            </svg>
+            <h2 class="service__title">free shipping</h2>
+            <p class="service__desc">
+              free shipping for an order of 100$ or above
             </p>
-            <div class="arrival__cats">
-              <button class="primary-btn">woman</button>
-              <button class="primary-btn">man</button>
-              <button class="primary-btn">children</button>
-            </div>
           </div>
-          <div class="arrival__cards">
-            <div class="arrival__card">
-              <figure class="card__fig">
-                <img src="./images/card-img-1.jpg" alt="man shirt 1" />
-                <span class="flag search-flag">
-                  <svg class="icon">
-                    <use xlink:href="./images/icon/sprite.svg#search"></use>
-                  </svg>
-                </span>
-                <span class="flag new-flag">new</span>
-                <span class="flag discount-flag">-20%</span>
-              </figure>
-              <div class="card__info">
-                <h2 class="card__title">stripe T-shirt men</h2>
-                <span class="card__review-ratings">
-                  <div class="ratings">
-                    <svg class="icon">
-                      <use xlink:href="./images/icon/sprite.svg#star"></use>
-                    </svg>
-                    <svg class="icon">
-                      <use xlink:href="./images/icon/sprite.svg#star"></use>
-                    </svg>
-                    <svg class="icon">
-                      <use xlink:href="./images/icon/sprite.svg#star"></use>
-                    </svg>
-                    <svg class="icon">
-                      <use xlink:href="./images/icon/sprite.svg#star"></use>
-                    </svg>
-                    <svg class="icon">
-                      <use xlink:href="./images/icon/sprite.svg#star"></use>
-                    </svg>
-                  </div>
-
-                  <span class="reviews"> 127 reviews </span>
-                </span>
-                <span class="card__price-discount">
-                  <span class="discounted">$16.50</span>
-                  <span class="price">$35.50</span>
-                </span>
-                <div class="card__actions">
-                  <svg class="icon">
-                    <use
-                      xlink:href="./images/icon/sprite.svg#shopping-cart"
-                    ></use>
-                  </svg>
-                  <span>add to cart</span>
-                  <svg class="icon">
-                    <use xlink:href="./images/icon/sprite.svg#heart"></use>
-                  </svg>
-                </div>
-              </div>
-            </div>
-            <div class="arrival__card">
-              <figure class="card__fig">
-                <img src="./images/card-img-2.jpg" alt="man shirt 1" />
-                <span class="flag search-flag">
-                  <svg class="icon">
-                    <use xlink:href="./images/icon/sprite.svg#search"></use>
-                  </svg>
-                </span>
-                <span class="flag new-flag">new</span>
-                <span class="flag discount-flag">-20%</span>
-              </figure>
-              <div class="card__info">
-                <h2 class="card__title">shirt men</h2>
-                <span class="card__review-ratings">
-                  <div class="ratings">
-                    <svg class="icon">
-                      <use xlink:href="./images/icon/sprite.svg#star"></use>
-                    </svg>
-                    <svg class="icon">
-                      <use xlink:href="./images/icon/sprite.svg#star"></use>
-                    </svg>
-                    <svg class="icon">
-                      <use xlink:href="./images/icon/sprite.svg#star"></use>
-                    </svg>
-                    <svg class="icon">
-                      <use xlink:href="./images/icon/sprite.svg#star"></use>
-                    </svg>
-                    <svg class="icon">
-                      <use xlink:href="./images/icon/sprite.svg#star"></use>
-                    </svg>
-                  </div>
-
-                  <span class="reviews"> 117 reviews </span>
-                </span>
-                <span class="card__price-discount">
-                  <span class="discounted">$20.50</span>
-                  <span class="price">$45.50</span>
-                </span>
-                <div class="card__actions">
-                  <svg class="icon">
-                    <use
-                      xlink:href="./images/icon/sprite.svg#shopping-cart"
-                    ></use>
-                  </svg>
-                  <span>add to cart</span>
-                  <svg class="icon">
-                    <use xlink:href="./images/icon/sprite.svg#heart"></use>
-                  </svg>
-                </div>
-              </div>
-            </div>
-            <div class="arrival__card">
-              <figure class="card__fig">
-                <img src="./images/card-img-3.jpg" alt="man shirt 1" />
-                <span class="flag search-flag">
-                  <svg class="icon">
-                    <use xlink:href="./images/icon/sprite.svg#search"></use>
-                  </svg>
-                </span>
-                <span class="flag new-flag">new</span>
-                <span class="flag discount-flag">-20%</span>
-              </figure>
-              <div class="card__info">
-                <h2 class="card__title">stripe T-shirt men</h2>
-                <span class="card__review-ratings">
-                  <div class="ratings">
-                    <svg class="icon">
-                      <use xlink:href="./images/icon/sprite.svg#star"></use>
-                    </svg>
-                    <svg class="icon">
-                      <use xlink:href="./images/icon/sprite.svg#star"></use>
-                    </svg>
-                    <svg class="icon">
-                      <use xlink:href="./images/icon/sprite.svg#star"></use>
-                    </svg>
-                    <svg class="icon">
-                      <use xlink:href="./images/icon/sprite.svg#star"></use>
-                    </svg>
-                    <svg class="icon">
-                      <use xlink:href="./images/icon/sprite.svg#star"></use>
-                    </svg>
-                  </div>
-
-                  <span class="reviews"> 127 reviews </span>
-                </span>
-                <span class="card__price-discount">
-                  <span class="discounted">$16.50</span>
-                  <span class="price">$35.50</span>
-                </span>
-                <div class="card__actions">
-                  <svg class="icon">
-                    <use
-                      xlink:href="./images/icon/sprite.svg#shopping-cart"
-                    ></use>
-                  </svg>
-                  <span>add to cart</span>
-                  <svg class="icon">
-                    <use xlink:href="./images/icon/sprite.svg#heart"></use>
-                  </svg>
-                </div>
-              </div>
-            </div>
-            <div class="arrival__card">
-              <figure class="card__fig">
-                <img src="./images/card-img-4.jpg" alt="man shirt 1" />
-                <span class="flag search-flag">
-                  <svg class="icon">
-                    <use xlink:href="./images/icon/sprite.svg#search"></use>
-                  </svg>
-                </span>
-                <span class="flag new-flag">new</span>
-                <span class="flag discount-flag">-20%</span>
-              </figure>
-              <div class="card__info">
-                <h2 class="card__title">stripe T-shirt men</h2>
-                <span class="card__review-ratings">
-                  <div class="ratings">
-                    <svg class="icon">
-                      <use xlink:href="./images/icon/sprite.svg#star"></use>
-                    </svg>
-                    <svg class="icon">
-                      <use xlink:href="./images/icon/sprite.svg#star"></use>
-                    </svg>
-                    <svg class="icon">
-                      <use xlink:href="./images/icon/sprite.svg#star"></use>
-                    </svg>
-                    <svg class="icon">
-                      <use xlink:href="./images/icon/sprite.svg#star"></use>
-                    </svg>
-                    <svg class="icon">
-                      <use xlink:href="./images/icon/sprite.svg#star"></use>
-                    </svg>
-                  </div>
-
-                  <span class="reviews"> 127 reviews </span>
-                </span>
-                <span class="card__price-discount">
-                  <span class="discounted">$16.50</span>
-                  <span class="price">$35.50</span>
-                </span>
-                <div class="card__actions">
-                  <svg class="icon">
-                    <use
-                      xlink:href="./images/icon/sprite.svg#shopping-cart"
-                    ></use>
-                  </svg>
-                  <span>add to cart</span>
-                  <svg class="icon">
-                    <use xlink:href="./images/icon/sprite.svg#heart"></use>
-                  </svg>
-                </div>
-              </div>
-            </div>
-            <div class="arrival__card">
-              <figure class="card__fig">
-                <img src="./images/card-img-5.jpg" alt="man shirt 1" />
-                <span class="flag search-flag">
-                  <svg class="icon">
-                    <use xlink:href="./images/icon/sprite.svg#search"></use>
-                  </svg>
-                </span>
-                <span class="flag new-flag">new</span>
-                <span class="flag discount-flag">-20%</span>
-              </figure>
-              <div class="card__info">
-                <h2 class="card__title">stripe T-shirt men</h2>
-                <span class="card__review-ratings">
-                  <div class="ratings">
-                    <svg class="icon">
-                      <use xlink:href="./images/icon/sprite.svg#star"></use>
-                    </svg>
-                    <svg class="icon">
-                      <use xlink:href="./images/icon/sprite.svg#star"></use>
-                    </svg>
-                    <svg class="icon">
-                      <use xlink:href="./images/icon/sprite.svg#star"></use>
-                    </svg>
-                    <svg class="icon">
-                      <use xlink:href="./images/icon/sprite.svg#star"></use>
-                    </svg>
-                    <svg class="icon">
-                      <use xlink:href="./images/icon/sprite.svg#star"></use>
-                    </svg>
-                  </div>
-
-                  <span class="reviews"> 127 reviews </span>
-                </span>
-                <span class="card__price-discount">
-                  <span class="discounted">$16.50</span>
-                  <span class="price">$35.50</span>
-                </span>
-                <div class="card__actions">
-                  <svg class="icon">
-                    <use
-                      xlink:href="./images/icon/sprite.svg#shopping-cart"
-                    ></use>
-                  </svg>
-                  <span>add to cart</span>
-                  <svg class="icon">
-                    <use xlink:href="./images/icon/sprite.svg#heart"></use>
-                  </svg>
-                </div>
-              </div>
-            </div>
+          <div class="service">
+            <svg class="icon">
+              <use xlink:href="./images/icon/sprite.svg#24-hours"></use>
+            </svg>
+            <h2 class="service__title">support 24/7</h2>
+            <p class="service__desc">contact us 24 hours a day 7 days a week</p>
+          </div>
+          <div class="service">
+            <svg class="icon">
+              <use xlink:href="./images/icon/sprite.svg#exchange"></use>
+            </svg>
+            <h2 class="service__title">30 days return</h2>
+            <p class="service__desc">
+              simply return product within 30 days for exchange
+            </p>
           </div>
         </section>
 
-        <section class="reviews-section">
-          <div class="review">
-            <figure class="review__fig">
-              <img src="./images/review-img1.jpg" alt="review user" />
+        <section class="offers-section">
+          <div class="offer">
+            <figure class="offer__figure">
+              <img src="./images/offer-1.webp" alt="samsung offer" />
             </figure>
-            <div class="review__content">
-              <p class="review__message">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. A
-                eligendi voluptatum officiis ut modi. Natus, accusantium. Porro,
-                reprehenderit maxime possimus illum esse vero eligendi earum
-                molestiae fugiat omnis aperiam a.
-              </p>
-              <span class="review__user-name">David blaine</span>
-              <span class="review__user-address">London, UK</span>
-            </div>
+            <h2 class="offer__title">galaxy s10 lite</h2>
+            <span class="offer__discount">save upto 25%</span>
+            <button class="primary__button">
+              <span class="btn__title">buy now</span>
+              <svg class="icon">
+                <use xlink:href="./images/icon/sprite.svg#shopping-cart"></use>
+              </svg>
+            </button>
+          </div>
+          <div class="offer">
+            <figure class="offer__figure">
+              <img src="./images/offer-2.webp" alt="smartwatch offer" />
+            </figure>
+            <h2 class="offer__title">alim smartwatch</h2>
+            <span class="offer__discount">save upto 35%</span>
+            <button class="primary__button">
+              <span class="btn__title">buy now</span>
+              <svg class="icon">
+                <use xlink:href="./images/icon/sprite.svg#shopping-cart"></use>
+              </svg>
+            </button>
+          </div>
+          <div class="offer">
+            <figure class="offer__figure">
+              <img src="./images/offer-3.webp" alt="dell offer" />
+            </figure>
+            <h2 class="offer__title">dell XPS 2020</h2>
+            <span class="offer__discount">save upto 15%</span>
+            <button class="primary__button">
+              <span class="btn__title">buy now</span>
+              <svg class="icon">
+                <use xlink:href="./images/icon/sprite.svg#shopping-cart"></use>
+              </svg>
+            </button>
+          </div>
+          <div class="offer">
+            <figure class="offer__figure">
+              <img src="./images/offer-4.webp" alt="samsung offer" />
+            </figure>
+            <h2 class="offer__title">smasung QLED</h2>
+            <span class="offer__discount">save upto 10%</span>
+            <button class="primary__button">
+              <span class="btn__title">buy now</span>
+              <svg class="icon">
+                <use xlink:href="./images/icon/sprite.svg#shopping-cart"></use>
+              </svg>
+            </button>
           </div>
         </section>
 
-        <section class="trending-section">
-          <div class="arrival__info">
-            <h2 class="primary-heading">what's trending</h2>
-            <p class="primary-slogan">
-              Hand-picked arrivals from the best designer
-            </p>
-          </div>
-
-          <div class="trending__images">
-            <img src="./images/trending-1.jpg" alt="trending 1" />
-            <img src="./images/trending-2.jpg" alt="trending 2" />
-          </div>
-
-          <div class="arrival__cards">
-            <div class="arrival__card">
-              <figure class="card__fig">
-                <img src="./images/card-img-1.jpg" alt="man shirt 1" />
-                <span class="flag search-flag">
-                  <svg class="icon">
-                    <use xlink:href="./images/icon/sprite.svg#search"></use>
-                  </svg>
-                </span>
-                <span class="flag new-flag">new</span>
-              </figure>
-              <div class="card__info">
-                <h2 class="card__title">stripe T-shirt men</h2>
-                <span class="card__review-ratings">
-                  <div class="ratings">
-                    <svg class="icon">
-                      <use xlink:href="./images/icon/sprite.svg#star"></use>
-                    </svg>
-                    <svg class="icon">
-                      <use xlink:href="./images/icon/sprite.svg#star"></use>
-                    </svg>
-                    <svg class="icon">
-                      <use xlink:href="./images/icon/sprite.svg#star"></use>
-                    </svg>
-                    <svg class="icon">
-                      <use xlink:href="./images/icon/sprite.svg#star"></use>
-                    </svg>
-                    <svg class="icon">
-                      <use xlink:href="./images/icon/sprite.svg#star"></use>
-                    </svg>
-                  </div>
-
-                  <span class="reviews"> 127 reviews </span>
-                </span>
-                <span class="card__price-discount">
-                  <span class="discounted">$16.50</span>
-                  <span class="price">$35.50</span>
-                </span>
-                <div class="card__actions">
-                  <svg class="icon">
-                    <use
-                      xlink:href="./images/icon/sprite.svg#shopping-cart"
-                    ></use>
-                  </svg>
-                  <span>add to cart</span>
+        <section class="best-sellers-section">
+          <h1 class="section__title">best selling</h1>
+          <div class="product__cards product__cards--wrapped">
+            <div class="product__card">
+              <figure class="product__figure">
+                <img
+                  src="./images/samsung note 20 front.jpg"
+                  alt="samsung note 20 front"
+                />
+                <img
+                  src="./images/samsung note 20 back.jpg"
+                  alt="samsung note 20 back"
+                />
+                <div class="product__actions">
                   <svg class="icon">
                     <use xlink:href="./images/icon/sprite.svg#heart"></use>
                   </svg>
                 </div>
+                <div class="discount-flag">-20%</div>
+                <div class="btn__stack">
+                  <button class="primary__button">
+                    <span class="btn__title">quick view</span>
+                    <svg class="icon">
+                      <use xlink:href="./images/icon/sprite.svg#eye"></use>
+                    </svg>
+                  </button>
+                  <button class="primary__button">
+                    <span class="btn__title">buy now</span>
+                    <svg class="icon">
+                      <use
+                        xlink:href="./images/icon/sprite.svg#shopping-cart"
+                      ></use>
+                    </svg>
+                  </button>
+                </div>
+              </figure>
+              <div class="product__info">
+                <h2 class="product__title">Samsung note 20 ultra</h2>
+                <div class="product__price">
+                  <span class="original__price">$2,500.00</span>
+                  <span class="discounted__price">$2,000.00</span>
+                </div>
               </div>
             </div>
-            <div class="arrival__card">
-              <figure class="card__fig">
-                <img src="./images/card-img-2.jpg" alt="man shirt 1" />
-                <span class="flag search-flag">
-                  <svg class="icon">
-                    <use xlink:href="./images/icon/sprite.svg#search"></use>
-                  </svg>
-                </span>
-                <span class="flag new-flag">new</span>
-              </figure>
-              <div class="card__info">
-                <h2 class="card__title">shirt men</h2>
-                <span class="card__review-ratings">
-                  <div class="ratings">
-                    <svg class="icon">
-                      <use xlink:href="./images/icon/sprite.svg#star"></use>
-                    </svg>
-                    <svg class="icon">
-                      <use xlink:href="./images/icon/sprite.svg#star"></use>
-                    </svg>
-                    <svg class="icon">
-                      <use xlink:href="./images/icon/sprite.svg#star"></use>
-                    </svg>
-                    <svg class="icon">
-                      <use xlink:href="./images/icon/sprite.svg#star"></use>
-                    </svg>
-                    <svg class="icon">
-                      <use xlink:href="./images/icon/sprite.svg#star"></use>
-                    </svg>
-                  </div>
-
-                  <span class="reviews"> 117 reviews </span>
-                </span>
-                <span class="card__price-discount">
-                  <span class="discounted">$20.50</span>
-                  <span class="price">$45.50</span>
-                </span>
-                <div class="card__actions">
-                  <svg class="icon">
-                    <use
-                      xlink:href="./images/icon/sprite.svg#shopping-cart"
-                    ></use>
-                  </svg>
-                  <span>add to cart</span>
+            <div class="product__card">
+              <figure class="product__figure">
+                <img
+                  src="./images/huawei p30 front.jpg"
+                  alt="huawei p30 front"
+                />
+                <img src="./images/huawei p30 back.jpg" alt="huawei p30 back" />
+                <div class="product__actions">
                   <svg class="icon">
                     <use xlink:href="./images/icon/sprite.svg#heart"></use>
                   </svg>
                 </div>
+                <div class="discount-flag">-25%</div>
+                <div class="btn__stack">
+                  <button class="primary__button">
+                    <span class="btn__title">quick view</span>
+                    <svg class="icon">
+                      <use xlink:href="./images/icon/sprite.svg#eye"></use>
+                    </svg>
+                  </button>
+                  <button class="primary__button">
+                    <span class="btn__title">buy now</span>
+                    <svg class="icon">
+                      <use
+                        xlink:href="./images/icon/sprite.svg#shopping-cart"
+                      ></use>
+                    </svg>
+                  </button>
+                </div>
+              </figure>
+              <div class="product__info">
+                <h2 class="product__title">Huawei p30</h2>
+                <div class="product__price">
+                  <span class="original__price">$700.00</span>
+                  <span class="discounted__price">$640.00</span>
+                </div>
               </div>
             </div>
-            <div class="arrival__card">
-              <figure class="card__fig">
-                <img src="./images/card-img-3.jpg" alt="man shirt 1" />
-                <span class="flag search-flag">
-                  <svg class="icon">
-                    <use xlink:href="./images/icon/sprite.svg#search"></use>
-                  </svg>
-                </span>
-                <span class="flag new-flag">new</span>
-              </figure>
-              <div class="card__info">
-                <h2 class="card__title">stripe T-shirt men</h2>
-                <span class="card__review-ratings">
-                  <div class="ratings">
-                    <svg class="icon">
-                      <use xlink:href="./images/icon/sprite.svg#star"></use>
-                    </svg>
-                    <svg class="icon">
-                      <use xlink:href="./images/icon/sprite.svg#star"></use>
-                    </svg>
-                    <svg class="icon">
-                      <use xlink:href="./images/icon/sprite.svg#star"></use>
-                    </svg>
-                    <svg class="icon">
-                      <use xlink:href="./images/icon/sprite.svg#star"></use>
-                    </svg>
-                    <svg class="icon">
-                      <use xlink:href="./images/icon/sprite.svg#star"></use>
-                    </svg>
-                  </div>
-                  <span class="reviews"> 127 reviews </span>
-                </span>
-                <span class="card__price-discount">
-                  <span class="discounted">$16.50</span>
-                  <span class="price">$35.50</span>
-                </span>
-                <div class="card__actions">
-                  <svg class="icon">
-                    <use
-                      xlink:href="./images/icon/sprite.svg#shopping-cart"
-                    ></use>
-                  </svg>
-                  <span>add to cart</span>
+            <div class="product__card">
+              <figure class="product__figure">
+                <img
+                  src="./images/huawei nova front.jpg"
+                  alt="huawei nova front"
+                />
+                <img
+                  src="./images/huawei nova back.jpg"
+                  alt="huawei nova back"
+                />
+                <div class="product__actions">
                   <svg class="icon">
                     <use xlink:href="./images/icon/sprite.svg#heart"></use>
                   </svg>
                 </div>
+                <div class="discount-flag">-10%</div>
+                <div class="btn__stack">
+                  <button class="primary__button">
+                    <span class="btn__title">quick view</span>
+                    <svg class="icon">
+                      <use xlink:href="./images/icon/sprite.svg#eye"></use>
+                    </svg>
+                  </button>
+                  <button class="primary__button">
+                    <span class="btn__title">buy now</span>
+                    <svg class="icon">
+                      <use
+                        xlink:href="./images/icon/sprite.svg#shopping-cart"
+                      ></use>
+                    </svg>
+                  </button>
+                </div>
+              </figure>
+              <div class="product__info">
+                <h2 class="product__title">Huawei nova mint blue</h2>
+                <div class="product__price">
+                  <span class="original__price">$649.99</span>
+                  <span class="discounted__price">$600.00</span>
+                </div>
               </div>
             </div>
-            <div class="arrival__card">
-              <figure class="card__fig">
-                <img src="./images/card-img-4.jpg" alt="man shirt 1" />
-                <span class="flag search-flag">
-                  <svg class="icon">
-                    <use xlink:href="./images/icon/sprite.svg#search"></use>
-                  </svg>
-                </span>
-                <span class="flag new-flag">new</span>
-              </figure>
-              <div class="card__info">
-                <h2 class="card__title">stripe T-shirt men</h2>
-                <span class="card__review-ratings">
-                  <div class="ratings">
-                    <svg class="icon">
-                      <use xlink:href="./images/icon/sprite.svg#star"></use>
-                    </svg>
-                    <svg class="icon">
-                      <use xlink:href="./images/icon/sprite.svg#star"></use>
-                    </svg>
-                    <svg class="icon">
-                      <use xlink:href="./images/icon/sprite.svg#star"></use>
-                    </svg>
-                    <svg class="icon">
-                      <use xlink:href="./images/icon/sprite.svg#star"></use>
-                    </svg>
-                    <svg class="icon">
-                      <use xlink:href="./images/icon/sprite.svg#star"></use>
-                    </svg>
-                  </div>
-
-                  <span class="reviews"> 127 reviews </span>
-                </span>
-                <span class="card__price-discount">
-                  <span class="discounted">$16.50</span>
-                  <span class="price">$35.50</span>
-                </span>
-                <div class="card__actions">
-                  <svg class="icon">
-                    <use
-                      xlink:href="./images/icon/sprite.svg#shopping-cart"
-                    ></use>
-                  </svg>
-                  <span>add to cart</span>
+            <div class="product__card">
+              <figure class="product__figure">
+                <img src="./images/camera front.jpg" alt="camera front" />
+                <img src="./images/camera back.jpg" alt="camera back" />
+                <div class="product__actions">
                   <svg class="icon">
                     <use xlink:href="./images/icon/sprite.svg#heart"></use>
                   </svg>
                 </div>
+                <div class="discount-flag">-10%</div>
+                <div class="btn__stack">
+                  <button class="primary__button">
+                    <span class="btn__title">quick view</span>
+                    <svg class="icon">
+                      <use xlink:href="./images/icon/sprite.svg#eye"></use>
+                    </svg>
+                  </button>
+                  <button class="primary__button">
+                    <span class="btn__title">buy now</span>
+                    <svg class="icon">
+                      <use
+                        xlink:href="./images/icon/sprite.svg#shopping-cart"
+                      ></use>
+                    </svg>
+                  </button>
+                </div>
+              </figure>
+              <div class="product__info">
+                <h2 class="product__title">Canon XLS 2.9dpi</h2>
+                <div class="product__price">
+                  <span class="original__price">$649.99</span>
+                  <span class="discounted__price">$600.00</span>
+                </div>
               </div>
             </div>
-            <div class="arrival__card">
-              <figure class="card__fig">
-                <img src="./images/card-img-5.jpg" alt="man shirt 1" />
-                <span class="flag search-flag">
-                  <svg class="icon">
-                    <use xlink:href="./images/icon/sprite.svg#search"></use>
-                  </svg>
-                </span>
-                <span class="flag new-flag">new</span>
-              </figure>
-              <div class="card__info">
-                <h2 class="card__title">stripe T-shirt men</h2>
-                <span class="card__review-ratings">
-                  <div class="ratings">
-                    <svg class="icon">
-                      <use xlink:href="./images/icon/sprite.svg#star"></use>
-                    </svg>
-                    <svg class="icon">
-                      <use xlink:href="./images/icon/sprite.svg#star"></use>
-                    </svg>
-                    <svg class="icon">
-                      <use xlink:href="./images/icon/sprite.svg#star"></use>
-                    </svg>
-                    <svg class="icon">
-                      <use xlink:href="./images/icon/sprite.svg#star"></use>
-                    </svg>
-                    <svg class="icon">
-                      <use xlink:href="./images/icon/sprite.svg#star"></use>
-                    </svg>
-                  </div>
-
-                  <span class="reviews"> 127 reviews </span>
-                </span>
-                <span class="card__price-discount">
-                  <span class="discounted">$16.50</span>
-                  <span class="price">$35.50</span>
-                </span>
-                <div class="card__actions">
-                  <svg class="icon">
-                    <use
-                      xlink:href="./images/icon/sprite.svg#shopping-cart"
-                    ></use>
-                  </svg>
-                  <span>add to cart</span>
+            <div class="product__card">
+              <figure class="product__figure">
+                <img src="./images/drone front.jpg" alt="drone front" />
+                <img src="./images/drone back.jpg" alt="drone back" />
+                <div class="product__actions">
                   <svg class="icon">
                     <use xlink:href="./images/icon/sprite.svg#heart"></use>
                   </svg>
+                </div>
+                <!-- <div class="discount-flag">-10%</div> -->
+                <div class="btn__stack">
+                  <button class="primary__button">
+                    <span class="btn__title">quick view</span>
+                    <svg class="icon">
+                      <use xlink:href="./images/icon/sprite.svg#eye"></use>
+                    </svg>
+                  </button>
+                  <button class="primary__button">
+                    <span class="btn__title">buy now</span>
+                    <svg class="icon">
+                      <use
+                        xlink:href="./images/icon/sprite.svg#shopping-cart"
+                      ></use>
+                    </svg>
+                  </button>
+                </div>
+              </figure>
+              <div class="product__info">
+                <h2 class="product__title">AXEX Drone 2LT</h2>
+                <div class="product__price">
+                  <span class="original__price">$789.99</span>
+                  <span class="discounted__price">$789.99</span>
+                </div>
+              </div>
+            </div>
+            <div class="product__card">
+              <figure class="product__figure">
+                <img src="./images/camera front.jpg" alt="camera front" />
+                <img src="./images/camera back.jpg" alt="camera back" />
+                <div class="product__actions">
+                  <svg class="icon">
+                    <use xlink:href="./images/icon/sprite.svg#heart"></use>
+                  </svg>
+                </div>
+                <div class="discount-flag">-10%</div>
+                <div class="btn__stack">
+                  <button class="primary__button">
+                    <span class="btn__title">quick view</span>
+                    <svg class="icon">
+                      <use xlink:href="./images/icon/sprite.svg#eye"></use>
+                    </svg>
+                  </button>
+                  <button class="primary__button">
+                    <span class="btn__title">buy now</span>
+                    <svg class="icon">
+                      <use
+                        xlink:href="./images/icon/sprite.svg#shopping-cart"
+                      ></use>
+                    </svg>
+                  </button>
+                </div>
+              </figure>
+              <div class="product__info">
+                <h2 class="product__title">Canon XLS 2.9dpi</h2>
+                <div class="product__price">
+                  <span class="original__price">$649.99</span>
+                  <span class="discounted__price">$600.00</span>
+                </div>
+              </div>
+            </div>
+            <div class="product__card">
+              <figure class="product__figure">
+                <img src="./images/camera front.jpg" alt="camera front" />
+                <img src="./images/camera back.jpg" alt="camera back" />
+                <div class="product__actions">
+                  <svg class="icon">
+                    <use xlink:href="./images/icon/sprite.svg#heart"></use>
+                  </svg>
+                </div>
+                <div class="discount-flag">-10%</div>
+                <div class="btn__stack">
+                  <button class="primary__button">
+                    <span class="btn__title">quick view</span>
+                    <svg class="icon">
+                      <use xlink:href="./images/icon/sprite.svg#eye"></use>
+                    </svg>
+                  </button>
+                  <button class="primary__button">
+                    <span class="btn__title">buy now</span>
+                    <svg class="icon">
+                      <use
+                        xlink:href="./images/icon/sprite.svg#shopping-cart"
+                      ></use>
+                    </svg>
+                  </button>
+                </div>
+              </figure>
+              <div class="product__info">
+                <h2 class="product__title">Canon XLS 2.9dpi</h2>
+                <div class="product__price">
+                  <span class="original__price">$649.99</span>
+                  <span class="discounted__price">$600.00</span>
+                </div>
+              </div>
+            </div>
+            <div class="product__card">
+              <figure class="product__figure">
+                <img src="./images/camera front.jpg" alt="camera front" />
+                <img src="./images/camera back.jpg" alt="camera back" />
+                <div class="product__actions">
+                  <svg class="icon">
+                    <use xlink:href="./images/icon/sprite.svg#heart"></use>
+                  </svg>
+                </div>
+                <div class="discount-flag">-10%</div>
+                <div class="btn__stack">
+                  <button class="primary__button">
+                    <span class="btn__title">quick view</span>
+                    <svg class="icon">
+                      <use xlink:href="./images/icon/sprite.svg#eye"></use>
+                    </svg>
+                  </button>
+                  <button class="primary__button">
+                    <span class="btn__title">buy now</span>
+                    <svg class="icon">
+                      <use
+                        xlink:href="./images/icon/sprite.svg#shopping-cart"
+                      ></use>
+                    </svg>
+                  </button>
+                </div>
+              </figure>
+              <div class="product__info">
+                <h2 class="product__title">Canon XLS 2.9dpi</h2>
+                <div class="product__price">
+                  <span class="original__price">$649.99</span>
+                  <span class="discounted__price">$600.00</span>
                 </div>
               </div>
             </div>
           </div>
         </section>
-      </section>
+      </div>
     </div>
 
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
     <script>
-      const nav__checkbox = document.getElementById('nav__opener-btn');
-      document.querySelector('.nav__content').addEventListener('click', e => {
-        if ([...e.target.classList].includes('nav__content')) {
-          nav__checkbox.checked = !nav__checkbox.checked;
-        }
+      let flkty = new Flickity('.product__cards', {
+        cellAlign: 'left',
+        // contain: true,
+        groupCells: 1,
+        wrapAround: true
       });
 
-      // ! IMAGE SHIFTING CODE =========================
-
-      let images = [...document.querySelectorAll('.header__images img')];
-
-      setInterval(() => {
-        let visibleImage = images.findIndex(img =>
-          [...img.classList].includes('visible')
-        );
-        images[visibleImage].classList.remove('visible');
-        if (visibleImage === images.length - 1) {
-          // last image
-          images[0].classList.add('visible');
-        } else {
-          images[visibleImage + 1].classList.add('visible');
+      document.querySelector('body').addEventListener('click', e => {
+        let btn = document.getElementById('navbar__opener-btn');
+        if (
+          btn.checked &&
+          e.target.id !== 'navbar__opener-btn' &&
+          ![...e.target.classList].includes('navbar__items') &&
+          ![...e.target.classList].includes('navbar__item')
+        ) {
+          btn.checked = false;
         }
-      }, 4000);
-
-      // ==============================================
+      });
     </script>
   </body>
 </html>
